@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
 import SearchForm from './SearchForm'
 class Nav extends Component{
-    handleRoute = text=>{
+    pushRoute = text=>{
         this.props.history.push(`/search/${text}`);
     }
     render(){
         return(
             <div>
                 <nav className="main-nav">
-                    <SearchForm onSubmit={this.handleRoute}/>
+                    <SearchForm onSubmit={this.pushRoute}/>
                     <ul>
                         <li><NavLink to={"/bottles"}>Bottles</NavLink></li>
                         <li><NavLink to={"/phones"}>Phones</NavLink></li>
