@@ -1,6 +1,5 @@
 # Treehouse Full Stack JavaScript - Project 7
 
-Brian Jensen's React flickr Gallery App
 
 ---
 
